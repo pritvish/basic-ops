@@ -1,1 +1,28 @@
-<p>ops works!</p>
+<h3>Interpolation example is : {{interpolationEx}}</h3>
+<br>
+<br>
+
+<h3>Property binding example</h3>
+<input [disabled]="isDisabled" type="text" [value]="propertybind">
+<br>
+<br>
+
+<h3>Event binding example</h3>
+
+<input style="margin-right: 10px;" type="text" value="{{count}}">
+<button style="margin-right: 10px;" type="button" (click)="increment()">Increment</button>
+<button type="button" (click)="decrement()">Decrement</button>
+<br>
+<br>
+
+<h3>Two way binding example</h3>
+<h3>Enter text:</h3>
+<input type="text" [(ngModel)]="twoWayBind">
+<h3>you have entered</h3>
+
+<input style="margin-right: 10px;" type="text" [value]="twoWayBind">
+<h3>through property binding</h3>
+
+<input type="text" value="{{twoWayBind}}">
+<h3>through interpolation</h3>
+
